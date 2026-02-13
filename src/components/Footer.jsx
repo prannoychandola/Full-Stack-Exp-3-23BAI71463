@@ -11,7 +11,7 @@ function Footer() {
       }}
     >
       <Typography variant="body2">
-        © 2026 Prannoy Chandola | Full-Stack-Exp-2-23BAI71463
+        © 2026 Prannoy Chandola | Full-Stack-Exp-3-23BAI71463
       </Typography>
     </Box>
   );

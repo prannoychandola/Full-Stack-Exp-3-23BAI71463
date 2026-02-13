@@ -4,23 +4,19 @@ import App from "./App";
 import "./index.css";
 
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { HashRouter } from "react-router-dom";
 
 const theme = createTheme({
   palette: {
-    primary: {
-      main: "#1e293b",
-    },
-    secondary: {
-      main: "#2563eb",
-    },
-  },
-  typography: {
-    fontFamily: "Poppins, sans-serif",
+    primary: { main: "#1e293b" },
+    secondary: { main: "#2563eb" },
   },
 });
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <ThemeProvider theme={theme}>
-    <App />
-  </ThemeProvider>
+  <HashRouter>
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
+  </HashRouter>
 );
